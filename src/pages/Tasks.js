@@ -222,7 +222,7 @@ const Tasks = () => {
         </div>
       </div>
 
-      <div className="offcanvas offcanvas-start w-75" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div className="offcanvas offcanvas-start w-auto" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div className="offcanvas-header">
         </div>
         <div className="offcanvas-body">
