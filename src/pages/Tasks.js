@@ -226,7 +226,7 @@ const Tasks = () => {
         <div className="offcanvas-header">
         </div>
         <div className="offcanvas-body">
-          <Items />
+          <Items className={`${isToggled?"d-block":"d-none"}`}/>
         </div>
       </div>
 
