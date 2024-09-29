@@ -97,7 +97,7 @@ const Tasks = () => {
   };
 
   let refresh = () =>{
-    window.refresh
+    fetch
   }
 
   {fetch?refresh():refresh()}
