@@ -38,7 +38,9 @@ const SignUp = () => {
       },2000)
     }
   };
-  
+  const setCookie = (name, value) => {
+    document.cookie = `${name}=${value}; path=/`;
+  };
   const login = async (e) => {
     e.preventDefault();
     try {
@@ -49,6 +51,8 @@ const SignUp = () => {
   
       let data = await response.data;
       Cookies.set('token', data.token)
+      setCookie('token', data.token)
+      console.log(data.token)
       console.log('Login Response:', data);
   
       if (data.message === 'User logged in successfully') {
