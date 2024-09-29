@@ -231,7 +231,9 @@ btn-menu {
 
 
 
-
+.w-85{
+  width: 80%!important;
+}
 .floating-button {
   position: fixed;
   bottom: 50px;
