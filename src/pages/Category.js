@@ -125,7 +125,7 @@ const Category = () => {
               <div className="mt-5">
                 <h3 className="fw-bold">TASKS</h3>
                 <div className='row d-flex justify-content-end px-3'>
-                <button className='buttonGrid float-right mt-2' onClick={()=>setGrid(!grid)}>{grid?<ViewAgendaIcon/>:<GridViewIcon/>}</button>
+                <button className='buttonGrid float-right mt-2 d-none d-md-block' onClick={()=>setGrid(!grid)}>{grid?<ViewAgendaIcon/>:<GridViewIcon/>}</button>
 
                 </div>
               </div>
@@ -184,7 +184,7 @@ const Category = () => {
         </div>
       </div>
 
-      <div className="offcanvas offcanvas-start w-50" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div className="offcanvas offcanvas-start w-85" tabIndex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div className="offcanvas-header">
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
