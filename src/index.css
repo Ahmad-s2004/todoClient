@@ -232,7 +232,7 @@ btn-menu {
 
 
 .w-85{
-  width: 100px;
+  width: 100px!important;
 }
 .floating-button {
   position: fixed;
