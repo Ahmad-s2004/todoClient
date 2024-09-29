@@ -20,7 +20,7 @@ const SignUp = () => {
   const sendData = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:6060/app/signup', {
+      const response = await axios.post('https://todo-server-tau-snowy.vercel.app/app/signup', {
         email: entries.email,
         name: entries.name,
         password: entries.password,
@@ -42,7 +42,7 @@ const SignUp = () => {
   const login = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:6060/app/signin', {
+      const response = await axios.post('https://todo-server-tau-snowy.vercel.app/app/signin', {
         email: entrie.email,
         password: entrie.password,
       }, { withCredentials: true });

@@ -35,7 +35,7 @@ const Modal = () => {
   const searchTasks = async (search) => {
     const token = Cookies.get('token');
     try {
-        const res = await axios.get(`http://localhost:6060/app/categories/search/${search}`, {
+        const res = await axios.get(`https://todo-server-tau-snowy.vercel.app/app/categories/search/${search}`, {
             headers: { Authorization: token },
             withCredentials: true,
         });
@@ -77,7 +77,7 @@ const Modal = () => {
     e.preventDefault(); 
     const token = Cookies.get('token');
     try {
-      const res = await axios.post('http://localhost:6060/app/tasks', {
+      const res = await axios.post('https://todo-server-tau-snowy.vercel.app/app/tasks', {
         ...entries
       }, {
         headers: {

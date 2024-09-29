@@ -27,7 +27,7 @@ const Items = () => {
   const fetchUser = async () => {
     const token = Cookies.get('token');
     try {
-      const res = await axios.get('http://localhost:6060/app/user', {
+      const res = await axios.get('https://todo-server-tau-snowy.vercel.app/app/user', {
         headers: {
           'Content-Type': 'application/json',
           Authorization: token
@@ -46,7 +46,7 @@ const Items = () => {
     }
     const token = Cookies.get('token');
     try {
-      await axios.post('http://localhost:6060/app/categories', { name: inputValue }, {
+      await axios.post('https://todo-server-tau-snowy.vercel.app/app/categories', { name: inputValue }, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: token
@@ -62,7 +62,7 @@ const Items = () => {
   const getCategory = async () => {
     const token = Cookies.get('token');
     try {
-      const res = await axios.get('http://localhost:6060/app/categories', {
+      const res = await axios.get('https://todo-server-tau-snowy.vercel.app/app/categories', {
         headers: {
           'Content-Type': 'application/json',
           Authorization: token
@@ -78,7 +78,7 @@ const Items = () => {
     e.preventDefault();
     const token = Cookies.get('token');
     try {
-      await axios.delete(`http://localhost:6060/app/categories/${_id}`, {
+      await axios.delete(`https://todo-server-tau-snowy.vercel.app/app/categories/${_id}`, {
         headers: {
           'Content-Type': 'application/json',
           Authorization: token

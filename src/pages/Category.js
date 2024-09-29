@@ -34,7 +34,7 @@ const Category = () => {
     setTask([]);  
     setTaskCompletion({});
     try {
-      const res = await axios.get(`http://localhost:6060/app/tasks/category/${_id}`, {
+      const res = await axios.get(`https://todo-server-tau-snowy.vercel.app/app/tasks/category/${_id}`, {
         headers: {
           Authorization: token,
         },
@@ -61,7 +61,7 @@ const Category = () => {
   };
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:6060/app/tasks/${id}`, {
+      await axios.delete(`https://todo-server-tau-snowy.vercel.app/app/tasks/${id}`, {
         headers: {
           Authorization: token,
         },

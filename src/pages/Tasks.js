@@ -36,14 +36,14 @@ const Tasks = () => {
     try {
       let res;
       if (!search) {
-        res = await axios.get('http://localhost:6060/app/tasks', {
+        res = await axios.get('https://todo-server-tau-snowy.vercel.app/app/tasks', {
           headers: {
             Authorization: token,
           },
           withCredentials: true,
         });
       } else {
-        res = await axios.get(`http://localhost:6060/app/tasks/search?search=${search}`, {
+        res = await axios.get(`https://todo-server-tau-snowy.vercel.app/app/tasks/search?search=${search}`, {
           headers: {
             Authorization: token,
           },
@@ -62,7 +62,7 @@ const Tasks = () => {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:6060/app/tasks/${id}`, {
+      await axios.delete(`https://todo-server-tau-snowy.vercel.app/app/tasks/${id}`, {
         headers: {
           Authorization: token,
         },
@@ -76,7 +76,7 @@ const Tasks = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await axios.get('http://localhost:6060/app/tasks', {
+      const res = await axios.get('https://todo-server-tau-snowy.vercel.app/app/tasks', {
         headers: {
           Authorization: token,
         },
