@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import Cookies from 'js-cookie';
 
 
 const SignUp = () => {
@@ -48,6 +48,7 @@ const SignUp = () => {
       }, { withCredentials: true });
   
       let data = await response.data;
+      Cookies.set('token', data.token)
       console.log('Login Response:', data);
   
       if (data.message === 'User logged in successfully') {
