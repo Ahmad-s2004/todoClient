@@ -230,7 +230,7 @@ const Tasks = () => {
         </div>
       </div>
 
-      <Modal fetchTasks={fetchData}/>
+      <Modal fetchTasks={fetchTasks}/>
 
 
 
