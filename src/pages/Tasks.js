@@ -162,7 +162,7 @@ const Tasks = () => {
                   className="w-100 py-2 px-4 fw-semibold rounded"
                   style={{ letterSpacing: '0.1rem', outline: 'none', border: '1px solid lightgrey' }}
                 />
-                <div className='row d-flex justify-content-end px-3'>
+                <div className='row d-flex justify-content-end px-3 d-none d-md-block'>
                 <button className='buttonGrid float-right mt-2' onClick={()=>setGrid(!grid)}>{grid?<ViewAgendaIcon/>:<GridViewIcon/>}</button>
 
                 </div>
