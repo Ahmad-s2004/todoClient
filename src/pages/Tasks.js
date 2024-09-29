@@ -96,8 +96,15 @@ const Tasks = () => {
     }
   };
 
+  let refresh = () =>{
+    window.refresh
+  }
+
+  {fetch?refresh():refresh()}
+
   useEffect(() => {
     fetchTasks();
+    refresh()
   }, []);
 
   useEffect(() => {
