@@ -5,7 +5,7 @@ import CatContext from '../context/Category';
 import Add from '@mui/icons-material/Add';
 import { useDebounce } from 'use-debounce';
 
-const Modal = () => {
+const Modal = (fetchData) => {
   const { cat, setCat, fetch, setFetch } = useContext(CatContext);
   
   const [entries, setEntries] = useState({
@@ -201,7 +201,10 @@ const Modal = () => {
                 type="submit" 
                 className="btn btn-danger btn-sm" 
                 data-bs-dismiss="modal" 
-                onClick={() => setFetch(!fetch)}
+                onClick={() => {
+                  setFetch(!fetch)
+                  fetchData()
+                }}
               >
                 Add Task
               </button>
