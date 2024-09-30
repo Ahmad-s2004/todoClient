@@ -201,8 +201,7 @@ const Modal = () => {
                 type="submit" 
                 className="btn btn-danger btn-sm" 
                 data-bs-dismiss="modal" 
-                onClick={(e) => {
-                  e.preventDefault()
+                onClick={() => {
                   setFetch(true)
                 }}
               >
