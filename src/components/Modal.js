@@ -203,10 +203,7 @@ const Modal = () => {
                 data-bs-dismiss="modal" 
                 onClick={(e) => {
                   e.preventDefault()
-                  setFetch(true) 
-                  setTimeout(()=>{
-                    setFetch(false) 
-                  },0)
+                  setFetch(true)
                 }}
               >
                 Add Task

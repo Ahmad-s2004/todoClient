@@ -99,6 +99,7 @@ const Tasks = () => {
   useEffect(() => {
     if(fetch){
       fetchTasks();
+      setFetch(false);
     }
     fetchTasks();
   }, []);
