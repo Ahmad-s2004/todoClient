@@ -97,6 +97,9 @@ const Tasks = () => {
   };
 
   useEffect(() => {
+    if(fetch){
+      fetchTasks();
+    }
     fetchTasks();
   }, []);
 
@@ -230,7 +233,7 @@ const Tasks = () => {
         </div>
       </div>
 
-      <Modal fetchTasks={fetchTasks}/>
+      <Modal />
 
 
 
