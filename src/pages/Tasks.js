@@ -234,7 +234,7 @@ const Tasks = () => {
         </div>
       </div>
 
-      <Modal />
+      <Modal path={'/'}/>
 
 
 

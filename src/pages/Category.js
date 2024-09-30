@@ -193,7 +193,7 @@ const Category = () => {
         </div>
       </div>
 
-      <Modal />
+      <Modal path={`/category/${_id}`}/>
 
 
 

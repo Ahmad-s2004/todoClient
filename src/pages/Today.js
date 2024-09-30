@@ -188,7 +188,7 @@ const Today = () => {
         </div>
       </div>
 
-      <Modal />
+      <Modal path={`/today`}/>
 
 
 

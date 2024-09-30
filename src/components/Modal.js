@@ -5,7 +5,7 @@ import CatContext from '../context/Category';
 import Add from '@mui/icons-material/Add';
 import { useDebounce } from 'use-debounce';
 
-const Modal = () => {
+const Modal = ({path}) => {
   const { cat, setCat, fetch, setFetch } = useContext(CatContext);
   
   const [entries, setEntries] = useState({
@@ -204,7 +204,7 @@ const Modal = () => {
                 onClick={() => {
                   setFetch(true)
                   setTimeout(()=>{
-                    window.location.href = '/';
+                    window.location.href = path;
                   },500)
                 }}
               >
