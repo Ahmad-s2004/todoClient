@@ -137,7 +137,7 @@ const Items = () => {
       </li>
       {catName.map((category) => (
         <li key={category._id}>
-          <Link to={`/category/${category._id}`} className='categoryButton d-flex justify-content-between'>
+          <Link to={`/category/${category._id}`} onClick={()=>window.location.href = `/category/${category._id}`} className='categoryButton d-flex justify-content-between'>
             <span>{category.name}</span>
             <span onClick={(e) => removeItem(category._id, e)} className='me-3'><DeleteIcon className='deleteIcon'/></span>
           </Link>
