@@ -203,7 +203,9 @@ const Modal = () => {
                 data-bs-dismiss="modal" 
                 onClick={() => {
                   setFetch(true)
-                  window.location.href = '/';
+                  setTimeout(()=>{
+                    window.location.href = '/';
+                  },500)
                 }}
               >
                 Add Task
